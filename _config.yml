@@ -3,7 +3,7 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            Harry Moss
+title:            Harry James Moss
 tagline:          'Personal page'
 description:      'Research Software Engineer at the British Library'
 url:              https://harryjmoss.github.io
@@ -15,7 +15,7 @@ baseurl:          ''
                   # sidebar_blog_link below.
 
 author:
-  name:           'Harry Moss'
+  name:           'Harry James Moss'
   url:            https://twitter.com/invariantmoss
 
 paginate:         5
