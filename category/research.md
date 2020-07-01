@@ -3,7 +3,6 @@ layout: category
 title: Research Interests
 category: Research
 ---
-# Research Interests
 
 ## Digital Humanities
 ### Image orientation detection in the Endangered Archives Programme
