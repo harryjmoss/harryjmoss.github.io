@@ -1,7 +1,8 @@
 ---
-layout:page
+layout: default
 title: Research Interests
 ---
+# Research Interests
 
 ## Digital Humanities
 ### Image orientation detection in the Endangered Archives Programme
