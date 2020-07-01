@@ -3,18 +3,15 @@ title:            Harry James Moss
 tagline:          'Personal site'
 description:      'Research Software Engineer at the British Library'
 url:              http://harryjmoss.github.io
-baseurl:          /
+baseurl:          ''
+paginate:         5
 
+# About and contact
 author:
   name:           'Harry James Moss'
   url:            https://twitter.com/invariantmoss
-
-paginate:         5
 
 # Gems
 plugins:
   - jekyll-paginate
   - jekyll-gist
-
-github:
-  repo:           https://github.com/harryjmoss
