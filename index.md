@@ -1,7 +1,7 @@
 ---
-layout: page
-title: About
-sidebar_link: true
+layout: index
+title: Harry James Moss
+sidebar_link: false
 ---
 
 <h1> Hello! </h1>
