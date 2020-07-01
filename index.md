@@ -1,5 +1,3 @@
-
-## Research Software Engineer @ 
 #Hi!  
 I'm a Research Software Engineer (RSE) at the [British Library](https://bl.uk) working in the Digital Scholarship department to write software, support researchers and investigate (and promote!) machine learning techniques within Digital Humanities.
 
