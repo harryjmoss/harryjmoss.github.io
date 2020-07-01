@@ -1,4 +1,4 @@
-<p class="Masthead" Harry James Moss</p>
+<p class="masthead" Harry James Moss</p>
 ## Research Software Engineer @ [British Library](https://bl.uk)
 
 Hi! I'm a Research Software Engineer (RSE) at the British Library working in the Digital Scholarship department to write software, support researchers and investigate (and promote!) machine learning techniques within Digital Humanities.
