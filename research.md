@@ -1,4 +1,8 @@
-# Research Interests
+---
+layout: page
+title: Research Interests
+---
+
 ## Digital Humanities
 ### Image orientation detection in the Endangered Archives Programme
 Training and deploying convolutional neural networks on cloud platforms to classify the orientation of the more than 7.5 million images in the British Library's Endangered Archives Programme 
