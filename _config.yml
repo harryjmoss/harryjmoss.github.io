@@ -3,7 +3,7 @@ title:            Harry James Moss
 tagline:          'Personal site'
 description:      'Research Software Engineer at the British Library'
 url:              http://harryjmoss.github.io
-baseurl:          ''
+baseurl:          http://harryjmoss.github.io
 paginate:         5
 
 # About and contact
