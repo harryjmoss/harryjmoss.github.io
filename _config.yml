@@ -5,7 +5,7 @@ highlighter:      rouge
 # Setup
 title:            Harry James Moss
 tagline:          'Personal page'
-description:      'Research Software Engineer at the British Library'
+description:      'Research Software Developer at UCL'
 url:              https://harryjmoss.github.io
 baseurl:          ''
                   # the optional subpath of your site, e.g. "/blog"
@@ -19,7 +19,7 @@ author:
   url:            https://twitter.com/invariantmoss
 
 paginate:         5
-# paginate_path:    '/page:num'
+paginate_path:    '/blog/page:num'
                     # Or '/blog/page:num' if you want to move your index pages
 
 plugins:
