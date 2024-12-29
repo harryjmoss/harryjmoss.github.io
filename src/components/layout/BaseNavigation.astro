@@ -62,7 +62,7 @@ const { pageTitle } = Astro.props;
       >
         {item.icon === 'custom-orcid' ? (
           // Render custom SVG for the ORCID icon
-          <img src="/src/icons/orcid.svg" alt={item.name} class="w-6 h-6" />
+          <img src="/icon/orcid.svg" alt={item.name} class="w-6 h-6" />
         ) : (
           // Render default Iconify icons
           <div class:list={[item.icon, 'w-6 h-6']} />
