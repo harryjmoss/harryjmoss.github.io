@@ -1,2 +1,3 @@
-harryFiles/
-*.gemspec
+.astro
+node_modules
+dist
