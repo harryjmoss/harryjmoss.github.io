@@ -3,7 +3,7 @@ name: NPM Build Check
 on: [pull_request]
 
 jobs:
-  npm_lint_and_build:
+  npm-lint-and-build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -13,3 +13,13 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm run build
+
+  npm-vulnerability-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 23
+      - run: npm ci
+      - run: npm audit --audit-level=high
