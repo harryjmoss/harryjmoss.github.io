@@ -36,4 +36,3 @@ jobs:
         run: npm run preview &
       - name: Run Lighthouse CI
         run: npx lhci autorun
-
