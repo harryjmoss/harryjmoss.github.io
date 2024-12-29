@@ -23,4 +23,3 @@ jobs:
           node-version: 23
       - run: npm ci
       - run: npm audit --audit-level=high
-
