@@ -1,0 +1,50 @@
+name: NPM Build Check
+
+on: [pull_request]
+
+jobs:
+  npm-lint-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 23
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run build
+
+  npm-vulnerability-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 23
+      - run: npm ci
+      - run: npm audit --audit-level=high
+
+  accessibility:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 23
+      - run: npm ci
+      - name: Start Preview Server
+        run: npm run preview &
+      - name: Run Lighthouse CI
+        run: npx lhci autorun
+
+  broken-link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 23
+      - name: Start Preview Server
+        run: npm run preview &
+      - name: Run Broken Link Checker
+        run: npx broken-link-checker http://localhost:3000 -ro
