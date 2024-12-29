@@ -10,6 +10,11 @@ const socials = [
     url: 'https://www.linkedin.com/in/harryjamesmoss/',
     icon: 'i-uil-linkedin',
   },
+  {
+    name: 'OrcID',
+    url: 'https://orcid.org/0000-0001-6497-3619',
+    icon: 'custom-orcid',
+  },
 ];
 ---
 
@@ -20,7 +25,13 @@ const socials = [
       socials.map((item) => (
         <li class='bg-white px-4 py-2 text-green border-black border-2 rounded card-shadow'>
           <a href={item.url} target='_blank' title={`Go to ${item.name}`}>
-            <div class:list={[item.icon, 'p-6']} />
+          {item.icon === 'custom-orcid' ? (
+          // Render custom SVG for the ORCID icon
+          <img src="/icon/orcid-mobile.svg" alt={item.name} class="w-6 h-6" />
+        ) : (
+          // Render default Iconify icons
+          <div class:list={[item.icon, 'w-6 h-6']} />
+        )}
           </a>
         </li>
       ))
