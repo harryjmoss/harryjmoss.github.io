@@ -2,7 +2,7 @@
   "name": "harryjmoss-site",
   "version": "1.2.0",
   "type": "module",
-  "packageManager": "pnpm@8.6.0",
+  "packageManager": "npm@11.12.1",
   "author": {
     "name": "Harry Moss",
     "url": "https://www.harryjmoss.com/"
@@ -30,9 +30,9 @@
     "@iconify-json/logos": "^1.2.9",
     "@iconify-json/uil": "^1.2.3",
     "@resvg/resvg-js": "^2.6.2",
-    "@typescript-eslint/parser": "^6.21.0",
+    "@typescript-eslint/parser": "^8.0.0",
     "@unocss/reset": "^0.57.7",
-    "astro": "^5.14.1",
+    "astro": "^6.3.0",
     "eslint": "^8.57.1",
     "eslint-plugin-astro": "^0.29.1",
     "eslint-plugin-jsx-a11y": "^6.10.2",
