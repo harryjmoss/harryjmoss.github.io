@@ -1,13 +1,19 @@
 import {
   defineConfig,
   presetIcons,
-  presetWind,
+  presetWind3,
   presetTypography,
 } from 'unocss';
 
 export default defineConfig({
+  content: {
+    filesystem: [
+      './src/**/*.{astro,html,ts,tsx,js,jsx,md,mdx}',
+      './node_modules/@eliancodes/brutal-ui/**/*.{js,ts}',
+    ],
+  },
   presets: [
-    presetWind(),
+    presetWind3(),
     presetIcons({
       collections: {
         logos: () =>
