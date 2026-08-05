@@ -8,4 +8,16 @@ updates:
     schedule:
       interval: 'weekly'
     cooldown:
-      default-days: 7
+      default-days: 5
+      semver-major-days: 14
+      semver-minor-days: 5
+      semver-patch-days: 3
+    groups:
+      minor-patch-updates:
+        update-types: ['minor', 'patch']
+      major-updates:
+        update-types: ['major']
+      npm-security-updates:
+        applies-to: security-updates
+        patterns:
+          - '*'
